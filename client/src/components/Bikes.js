@@ -1,7 +1,7 @@
 function Bikes() {
     return (
         <div>
-            <p>Bikes</p>
+            <p>You are in Shop Bikes</p>
         </div>
     )
 }

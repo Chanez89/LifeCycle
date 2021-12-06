@@ -1,7 +1,7 @@
 function ShoppingCart() {
     return (
         <div>
-            <p>ShoppingCart</p>
+            <p>You are in ShoppingCart</p>
         </div>
     )
 }
