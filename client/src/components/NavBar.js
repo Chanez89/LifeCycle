@@ -2,9 +2,12 @@ import { NavLink } from "react-router-dom";
 
 
 function NavBar() {
+
+    
+
     return (
         <div>
-        
+            
             <NavLink
                 to="/"
                 className=""
@@ -35,11 +38,26 @@ function NavBar() {
                 style={{ textDecorationLine: "none" }}
                 ><h3>Cart</h3>
             </NavLink>
+
+            {/* add ternary to show/notshow when signed in/ signed out */}
+
             <NavLink
-                to="/SignIn"
+                to="/Login"
                 className=""
                 style={{ textDecorationLine: "none" }}
-                ><h3>Sign In/Sign Up</h3>
+                ><h3>Sign In</h3>
+            </NavLink>
+            <NavLink
+                to="/SignUp"
+                className=""
+                style={{ textDecorationLine: "none" }}
+                ><h3>Sign Up</h3>
+            </NavLink>
+            <NavLink
+                to="/Logout"
+                className=""
+                style= {{ textDecorationLine: "none" }}
+                ><h3>Sign Out</h3>
             </NavLink>
             
         </div>

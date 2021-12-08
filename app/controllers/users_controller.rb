@@ -16,6 +16,11 @@ class UsersController < ApplicationController
         render json: user
     end
 
+    def index
+        storeUsers = User.all
+        render json: storeUsers
+    end
+
     private
 
     def authorize
@@ -23,7 +28,7 @@ class UsersController < ApplicationController
     end
 
     def user_params
-        params.permit(:username, :user, :password, :password_confirmation)
+        params.permit(:username, :password, :password_confirmation)
     end
 
 end

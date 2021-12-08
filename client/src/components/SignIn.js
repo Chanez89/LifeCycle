@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
-function SingUp( {setCurrentUser} ) {
-    // const [username, setUserName] = useState([]);
-    // const [password, setPassword] = useState([]);
+function SignIn( {setCurrentUser} ) {
 
     const navigate = useNavigate()
 
+    // const [username, setUsername] = useState([]);
+    // const [password, setPassword] = useState([]);
     const [formData, setFormData] = useState({
         username:"",
         password:"",
@@ -19,11 +20,10 @@ function SingUp( {setCurrentUser} ) {
             ...formData,[e.target.name]:e.target.value,
         })
     }
-
     function handleSubmit (e){
         e.preventDefault();
         
-        fetch("/users", {
+        fetch("/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -39,34 +39,28 @@ function SingUp( {setCurrentUser} ) {
             } else {
                 response.json().then(error => {
                     console.log(error)
-                    alert("Signup Unsuccessful")
+                    alert("Sign In Unsuccessful")
                 })
             }
         })
     }
     
 
-
     return (
         <div>
-            <h3>Let's make an account!</h3>
+            <h1>Sign In</h1>
             <div>
                 <form onSubmit={handleSubmit}>
                     <label>Username</label>
-                    <input type="text" name="username" onChange={handleChange} minLength="1" maxLength="20" value={formData.username} style={{ display: 'block' }}/>
-
-                    <label>Password </label>
-                    <input type="password" name="password" minLength="6" maxLength="15"  onChange={handleChange} value={formData.password} style={{ display: 'block' }} required />
-
-                    <label>Password Confirmation </label>
-                    <input type="password" name="password_confirmation" minLength="6" maxLength="15"  onChange={handleChange} value={formData.password_confirmation} style={{ display: 'block' }} required />
-
+                        <input type="text" name="username" value={formData.username} minLength="1" maxLength="20" onChange={handleChange} />
+                    <label htmlFor="password">Password</label>
+                        <input type="password" value={formData.password} minLength="6" maxLength="15" name="password" onChange={handleChange} required />
                     <button type="submit">Submit</button>
                 </form>
-            </div>
+            </div> 
         </div>
     )
 }
 
 
-export default SingUp;
+export default SignIn;
