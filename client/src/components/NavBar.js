@@ -18,7 +18,7 @@ function NavBar({currentUser, setCurrentUser}) {
     }
 
     return (
-        <div>
+        <div className="navbar-nav">
             { !currentUser ? 
         
             <>
