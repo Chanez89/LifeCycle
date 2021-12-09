@@ -1,0 +1,9 @@
+.link{
+    color: rgb(85, 26, 139);
+    cursor: pointer;
+
+}
+
+.link:active{
+    color: red;
+}
