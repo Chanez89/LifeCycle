@@ -17,7 +17,7 @@ function SignIn( {setCurrentUser} ) {
 
     function handleChange (e) {
         setFormData({
-            ...formData,[e.target.name]:e.target.value,
+            ...formData,[e.target.name]:e.target.value
         })
     }
     function handleSubmit (e){

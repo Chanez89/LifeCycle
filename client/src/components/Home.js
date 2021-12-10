@@ -1,7 +1,10 @@
+
+
 function Home() {
+
     return (
         <div>
-            <p>You are in Home</p>
+        <p>welcome home</p>
         </div>
     )
 }

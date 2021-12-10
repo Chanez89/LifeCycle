@@ -25,43 +25,43 @@ function NavBar({currentUser, setCurrentUser}) {
             {/* null User navbar with ability to sign in/signup */}
             <NavLink
                 to="/"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Home</h3>
             </NavLink>
             <NavLink
                 to="/Bikes"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Shop Bikes</h3>
             </NavLink>
             <NavLink
                 to="/AccessoriesTools"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Shop Accessories/Tools</h3>
             </NavLink> 
             <NavLink
                 to="/Services"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Services</h3>
             </NavLink>
             <NavLink
                 to="/ShoppingCart"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Cart</h3>
             </NavLink>
             <NavLink
                 to="/Login"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Sign In</h3>
             </NavLink>
             <NavLink
                 to="/SignUp"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Sign Up</h3>
             </NavLink>
@@ -71,31 +71,31 @@ function NavBar({currentUser, setCurrentUser}) {
             {/* Signed in user Navbar with ability to Sign Out.*/}
             <NavLink
                 to="/"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Home</h3>
             </NavLink>
             <NavLink
                 to="/Bikes"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Shop Bikes</h3>
             </NavLink>
             <NavLink
                 to="/AccessoriesTools"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Shop Accessories/Tools</h3>
             </NavLink> 
             <NavLink
                 to="/Services"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Services</h3>
             </NavLink>
             <NavLink
                 to="/ShoppingCart"
-                className=""
+                className="link"
                 style={{ textDecorationLine: "none" }}
                 ><h3>Cart</h3>
             </NavLink>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function SingUp( {setCurrentUser} ) {
+function SignUp( {setCurrentUser} ) {
     // const [username, setUserName] = useState([]);
     // const [password, setPassword] = useState([]);
 
@@ -69,4 +69,4 @@ function SingUp( {setCurrentUser} ) {
 }
 
 
-export default SingUp;
+export default SignUp;
